@@ -1,4 +1,4 @@
-$(document).ready(function () {
+(document).ready(function () {
     let sentences = ['ten ate neite ate nee enet ite ate inet ent eate', 'Too ato too nOt enot one totA not anot tOO aNot', 'oat itain oat tain nate eate tea anne inant nean', 'itant eate anot eat nato inate eat anot tain eat', 'nee ene ate ite tent tiet ent ine ene ete ene ate'];
     let sentencesIndex = 0;
     let letterIndex = 0;
@@ -74,7 +74,7 @@ $(document).ready(function () {
                     $('#sentence').text('You ran out of sentences! Your typing speed was ' + wpm.toFixed(0) + ' words per minute with ' + mistakes + ' mistake!')
                 }
 
-                $('#target-letter').append('<button></button>')
+                $('#target-letter').append('<button> Start Over</button>')
                 $('.playAgain').slideUp(300).delay(1000).fadeIn(1000);
                 $('.playAgain').click(function () {
                     location.reload(true)
